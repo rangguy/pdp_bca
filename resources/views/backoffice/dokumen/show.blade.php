@@ -53,7 +53,7 @@
         <h4 class="text-sm font-semibold text-surface-200/50 uppercase tracking-wider mb-4">Dokumen Kontrak & PO</h4>
 
         @if($pengajuan->isGeneratable())
-            <form method="POST" action="{{ route('backoffice.dokumen.generate', $pengajuan) }}" onsubmit="return confirm('Generate dokumen kontrak dan PO?')">
+            <form method="POST" action="{{ route('backoffice.dokumen.generate', $pengajuan) }}">
                 @csrf
                 <button type="submit" class="px-6 py-3 bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-white font-semibold rounded-xl shadow-lg shadow-brand-500/25 text-sm transform hover:-translate-y-0.5 flex items-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>

@@ -80,7 +80,7 @@
     <div class="bg-surface-900 border border-surface-800 rounded-2xl p-6" x-data="{ showReject: false }">
         <h4 class="text-sm font-semibold text-surface-200/50 uppercase tracking-wider mb-4">Keputusan</h4>
         <div class="flex gap-3 mb-4">
-            <form method="POST" action="{{ route('atasan.approval.approve', $pengajuan) }}" onsubmit="return confirm('Setujui pengajuan ini?')">
+            <form method="POST" action="{{ route('atasan.approval.approve', $pengajuan) }}">
                 @csrf
                 <button type="submit" class="px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-semibold rounded-xl shadow-lg shadow-emerald-500/25 text-sm">
                     ✓ Setujui
