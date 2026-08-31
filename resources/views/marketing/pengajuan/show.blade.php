@@ -21,7 +21,7 @@
                 </a>
             @endif
             @if($pengajuan->isSubmittable())
-                <form method="POST" action="{{ route('marketing.pengajuan.submit', $pengajuan) }}" onsubmit="return confirm('Submit pengajuan ini untuk approval?')">
+                <form method="POST" action="{{ route('marketing.pengajuan.submit', $pengajuan) }}">
                     @csrf
                     <button type="submit" class="px-4 py-2 bg-gradient-to-r from-brand-600 to-brand-500 text-white font-semibold rounded-xl shadow-lg shadow-brand-500/25 text-sm">
                         Submit untuk Approval
